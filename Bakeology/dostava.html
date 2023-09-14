@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="icon" href="image/Logo.png">
+        <script src="js/forma.js"></script>
+        <title>Bakeology</title>
+    </head>
+<body>
+    <header>
+        <div class="meni">
+            <ul class="main-meni">
+                <li ><a href="katalog.html">Katalog</a></li>
+                <li><a href="o_nama.html">O nama</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li class="active "><a href="dostava.html">Dostava</a></li>
+                <li id="logo"><img class="logoimg" height="55px" src="image/Logo.png" alt=""></li>
+            </ul>
+        </div>
+    </header>
+        <div class="center">
+            <div class="dostava">
+                <i><h2 id="poruci">Poruci</h2></i>
+                <p id="postovani">Postovani molimo Vas da unesete sve podatke<br>
+                kako biste uspesno porucili Vas Bakeology uzitak. <br>
+                </p>
+                <br>
+            </div>
+            <br>
+            <form name="myForm">
+                Ime i prezime: <input type="text" id="ime" name="ime" placeholder="Ime i prezime"/><br>
+                Broj telefona: <input type="number" id="telefon" name="telefon" placeholder="Broj telefona"/><br>
+                <div id="do">
+                    <img id="dos" src="image/dostavaForma.png" height="150px" alt="telefon"/>
+                </div>
+                E-mail: <input type="email" id="mail" name="mail" placeholder="E-Mail"/><br>
+                Adresa: <input type="text" id="adresa" name="adresa" placeholder="Adresa"/><br>
+                <br>
+                Odaberite jelo (mozete odabrati 1 jelo po porudzbini): <br>
+                 <select name="krofne" id="birajk">
+                    <option value="Biram krofnu">Biram krofnu</option>
+                    <option value="Bakeology">Bakeology</option> 
+                    <option value="Kinder">Kinder</option>
+                    <option value="Ferrero">Ferrero</option>
+                    <option value="Choco mrvica">Choco mrvica</option>
+                    <option value="Krofnaello">Krofnaello</option>
+                    <option value="Twixolina">Twixolina</option>
+                    <option value="Eurokremina">Eurokremina</option>
+                    <option value="Cherry on top">Cherry on top</option>
+                    <option value="Lover">Lover</option>
+
+                </select>
+
+                <select name="waffle" id="birajw">
+                    <option value="Biram waffle">Biram waffle</option>
+                    <option value="Bakeology"> Bakeology</option>
+                    <option value="Nugatino"> Nugatino</option>
+                    <option value="Galaxy "> Galaxy</option>
+                    <option value="Beli kinder">Beli kinder</option>
+                    <option value="Snickers">Snickers</option>
+                    <option value="Under the sea">Under the sea</option>
+
+                </select>
+
+                <select name="palacinke" id="birajpa">
+                    <option value="Biram palacinku">Biram palacinku</option>
+                    <option value="Krem">Krem</option>
+                    <option value="Nutela">Nutela</option>
+                    <option value="Banana">Banana</option>
+                    <option value="Malina">Malina</option>
+                    <option value="Visnja">Visnja</option>
+                    <option value="Borovnica">Borovnica</option>
+                </select>
+                 <br>
+                U koliko sati zelite da stigne porudzbina:  <input class="vreme" id="vreme" type="time">
+                <br>
+                <input type="reset" value="Ponisti odgovor" />
+                <br>
+            </form>
+            <br>
+            <br>
+            <div id="dugmici">
+                <button id="spec">Pogledaj specijalitet meseca</button> <div id="spec_">Waffle Nugatino</div> <br>
+                <button onclick="proveri()">Proveri svoje podatke</button> <br>
+                <div id="podaci">
+                    <p id="pime">Ime: </p> <input type="text" id="pimee">
+                    <p id="ptele">Broj telefona: </p> <input type="text" id="ptelee">
+                    <p id="pmejl">E-mail: </p><input type="text" id="pmejle">
+                    <p id="padresa">Adresa: </p><input type="text" id="padresae">
+                    <p id="pjelo">Porucili ste: </p> <p id="pjelo"><br></p> <p id="nisiBirao">Niste odabrali slatkis, molimo Vas odaberite</p>
+                </div>
+                <button onclick="validacija()">Poruci</button>
+            </div>
+            <br>
+            <br>
+        </div>
+ 
+</body> 
+
+</html>
